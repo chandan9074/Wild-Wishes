@@ -1,0 +1,30 @@
+.navColor {
+  background-color: rgb(1, 33, 39);
+}
+.nav-title {
+  color: white;
+  text-decoration: none;
+}
+.nav-title:hover {
+  color: white;
+}
+.nav-btn {
+  text-decoration: none;
+  color: white;
+  /* margin-left: 1rem; */
+}
+.nav-btn:hover {
+  color: white;
+}
+.sign-btn {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgb(2, 82, 82);
+  background-color: aqua;
+  color: black;
+  border-radius: 10rem;
+  text-decoration: none;
+  outline: none;
+}
+.sign-btn:hover {
+  color: black;
+}

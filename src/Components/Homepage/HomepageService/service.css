@@ -1,0 +1,48 @@
+.single-service-part {
+  position: relative;
+  margin-top: 3rem;
+}
+.service-img {
+  width: 19rem;
+  height: 17rem;
+  border-radius: 50% 50% 50% 0;
+}
+.service-title {
+  /* width: 50%; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.service-des {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+.service-details {
+  position: absolute;
+  top: 12rem;
+  left: 3rem;
+  background-color: rgb(4, 64, 99);
+  width: 80%;
+  padding: 2rem 3rem;
+  border-radius: 50% 50% 0 50%;
+}
+.book-btn {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgb(3, 121, 121);
+  float: right;
+  font-size: 1rem;
+  border-radius: 10rem;
+  color: white;
+}
+.book-btn:hover {
+  background-color: rgb(55, 199, 184);
+  color: black;
+  border: 1px solid rgb(2, 66, 66);
+}
