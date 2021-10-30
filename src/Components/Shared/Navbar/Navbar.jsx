@@ -7,6 +7,8 @@ import useAuth from '../../../hooks/useAuth';
 import './navbar.css'
 const Navigations = () => {
     const {user, logout} = useAuth()
+
+    // console.log("user hoto",user.photoURL);
     return ( 
         <div>
             <Navbar className="navColor">
@@ -25,7 +27,7 @@ const Navigations = () => {
                             <Link to="/excercise" className="nav-btn text-xl md:ml-2">Manage All Bookings</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/excercise" className="nav-btn text-xl md:ml-2">Add New Tour</Link>
+                            <Link to="/add-tour" className="nav-btn text-xl md:ml-2">Add New Tour</Link>
                         </Nav.Link>
                     </Nav>
                     <Nav className="md:flex items-center">

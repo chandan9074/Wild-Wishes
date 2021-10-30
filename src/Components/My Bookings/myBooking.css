@@ -1,0 +1,19 @@
+.my-orders-part {
+  background-color: rgb(20 23 32);
+}
+.panding-btn {
+  background-color: salmon;
+}
+.aprove-btn {
+  background-color: aquamarine;
+}
+.fa-trash:hover {
+  /* font-size: 1.2rem; */
+  box-shadow: 0 0 0.3rem gray;
+}
+.my-order-underline {
+  width: 6rem;
+  border-top: 4px solid gray;
+  margin-left: 6rem;
+  border-radius: 20rem;
+}

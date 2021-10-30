@@ -32,9 +32,12 @@ const ServiceDetails = () => {
         const phone = phoneref.current.value;
         const trans = transref.current.value;
         const bookID = id;
-        console.log(name, email)
+        const userImg = user.photoURL;
+        const oderSt = "Panding";
+
+        // console.log(name, email)
         // const newUser = { "name": name, "email":email }
-        const newBookings = {bookID, name, email, phone, trans }
+        const newBookings = {bookID, userImg, name, email, phone, trans, oderSt }
         
         fetch("http://localhost:5000/bookings", {
             method:'POST',

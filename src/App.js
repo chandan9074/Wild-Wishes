@@ -7,8 +7,9 @@ import SingUp from './Components/Accountpage/SignUp';
 import SignIn from './Components/Accountpage/SignIn';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Components/Private route/PrivateRoute'
-import MyBooking from './Components/My-Orders/MyBooking';
+import MyBooking from './Components/My Bookings/MyBooking';
 import ServiceDetails from './Components/Homepage/ServiceDetails/ServiceDetails';
+import AddTour from './Components/AddTourgpage/AddTour';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <PrivateRoute exact path="/my-booking" >
               <MyBooking />
+            </PrivateRoute>
+            <PrivateRoute exact path="/add-tour" >
+              <AddTour />
             </PrivateRoute>
             <PrivateRoute exact path="/booking-details/:id" >
               <ServiceDetails />
