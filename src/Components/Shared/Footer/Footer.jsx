@@ -20,10 +20,10 @@ const Footer = () => {
                 <div className="flex justify-around">
                     <div className="flex flex-col">
                         <h1 className="text-2xl text-gray-200 font-bold">Explore</h1>
-                        <Link className="text-gray-300 text-sm mb-1 hover:text-gray-300">Home</Link>
-                        <Link className="text-gray-300 text-sm mb-1 hover:text-gray-300">My Orders</Link>
-                        <Link className="text-gray-300 text-sm mb-1 hover:text-gray-300">Manage All Orders</Link>
-                        <Link className="text-gray-300 text-sm mb-1 hover:text-gray-300">Add New Services</Link>
+                        <Link to="/" className="text-gray-300 text-sm mb-1 hover:text-gray-300">Home</Link>
+                        <Link to="/my-booking" className="text-gray-300 text-sm mb-1 hover:text-gray-300">My Bookings</Link>
+                        <Link to="/manage-booking" className="text-gray-300 text-sm mb-1 hover:text-gray-300">Manage All Bookings</Link>
+                        <Link to="/add-tour" className="text-gray-300 text-sm mb-1 hover:text-gray-300">Add New Adventure</Link>
                     </div>
                     <div>
                         <h1 className="text-2xl text-gray-200 font-bold">Contact</h1>

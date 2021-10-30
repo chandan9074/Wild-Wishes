@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
-import useBookings from '../../hooks/useBooking';
 
 
-import './myBooking.css';
+const ManageAllBook = () => {
 
-const MyBooking = () => {
-
-    // const [bookings] = useBookings();
-    const [mybook, setMybook] = useState([]);
+    const [allbook, setAllbook] = useState([]);
     const {user} = useAuth()
 
     useEffect(()=>{
+        getServices()
+        // console.log("hello", bookings)
+    }, [])
+
+    const getServices = () =>{
         fetch("http://localhost:5000/my-bookings")
             .then(res => res.json())
             .then(res =>{
-                const userBook = res.filter(book => book.email === user.email);
-                setMybook(userBook);
-                console.log(userBook);
+                // const userBook = res.filter(book => book.email === user.email);
+                setAllbook(res);
+                // console.log(userBook);
             })
-        // console.log("hello", bookings)
-    }, [])
+    }
 
     const handleDelete = (id) =>{
         // console.log("dukhche")
@@ -34,19 +34,43 @@ const MyBooking = () => {
             .then(res =>{
                 if(res.deletedCount > 0){
                     alert("deleted successfully!! You get back your money less then 7 days");
-                    const remainingUser = mybook.filter(user => user._id !== id);
-                    setMybook(remainingUser);
+                    const remainingUser = allbook.filter(user => user._id !== id);
+                    setAllbook(remainingUser);
                 }
             })
         }
     }
 
+    const handleUpdate = (id, orderSt) =>{
+
+        if(orderSt==="Panding"){
+            const newOrderSt = "Aproved";
+            const updateUser ={newOrderSt}
+            fetch(`http://localhost:5000/bookings/${id}`, {
+                method: "PUT",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(updateUser)
+            })
+            .then(res=>res.json())
+            .then(res=>{
+                if(res.modifiedCount > 0){
+                    alert("updated successfully")
+                    getServices();
+                }
+            })
+        }
+
+        // e.preventDefault();
+    }
+
     return ( 
         <div className="my-orders-part pb-20 pt-10">
             <div className="container w-full">
-                <h1 className="text-gray-300">My Orders</h1>
-                <div className="my-order-underline mb-5"></div>
-                {mybook.length===0? <div className="w-full flex justify-center"><img src="https://i.ibb.co/L81J3wt/no-result.png" alt="" className="w-96" /></div>:
+                <h1 className="text-gray-300">All Bookings</h1>
+                <div className="all-order-underline mb-5"></div>
+                {allbook.length===0? <div className="w-full flex justify-center"><img src="https://i.ibb.co/L81J3wt/no-result.png" alt="" className="w-96" /></div>:
                 <div className="w-10/12 mx-auto">
 
                     <div className="flex items-center bg-white py-2 mb-3 rounded-md">
@@ -58,8 +82,8 @@ const MyBooking = () => {
                             <p className="my-0 mr-5 text-base font-bold">Order Status</p>
                         </div>
                     </div>
-                    { mybook.map(book=>(
-                    <div key={book._id} className="flex items-center bg-white py-3 rounded-md mt-3">
+                    { allbook.map(book=>(
+                    <div className="flex items-center bg-white py-3 rounded-md mt-3">
                         <div className="flex items-center justify-center w-96">
                             {book.userImg ?
                             <img src={book.userImg} alt="" className="w-10 rounded-full"/>
@@ -71,15 +95,17 @@ const MyBooking = () => {
                             {book.oderSt === "Panding" ? 
                             <p className="my-0 mr-5 py-1 rounded-full px-3 text-lg font-semibold panding-btn">Panding</p>
                             :<p className="my-0 mr-5 py-1 rounded-full px-3 text-lg font-semibold aprove-btn">Aproved</p>}
-                            <i onClick={()=>handleDelete(book._id)} class="fas fa-trash text-red-800 text-lg cursor-pointer p-1 rounded-full"></i>
+                            <i onClick={()=>handleDelete(book._id)} class="fas fa-trash text-red-800 text-lg cursor-pointer p-1 rounded-full mr-5"></i>
+                            {book.oderSt === "Panding" ? 
+                            <i onClick={()=>handleUpdate(book._id, book.oderSt)} title="Aprove?" class="fas fa-check-circle text-green-500 text-xl cursor-pointer rounded-full" ></i>: null}
                         </div>
                     </div>
                     ))}
-                </div> }
+                </div>}
             </div>
             
         </div>
      );
 }
  
-export default MyBooking;
+export default ManageAllBook;

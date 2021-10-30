@@ -24,7 +24,7 @@ const Navigations = () => {
                             <Link to="/my-booking" className="nav-btn text-xl md:ml-2">My Bookings</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/excercise" className="nav-btn text-xl md:ml-2">Manage All Bookings</Link>
+                            <Link to="/manage-booking" className="nav-btn text-xl md:ml-2">Manage All Bookings</Link>
                         </Nav.Link>
                         <Nav.Link>
                             <Link to="/add-tour" className="nav-btn text-xl md:ml-2">Add New Tour</Link>

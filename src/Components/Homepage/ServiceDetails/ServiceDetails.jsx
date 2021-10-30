@@ -34,10 +34,11 @@ const ServiceDetails = () => {
         const bookID = id;
         const userImg = user.photoURL;
         const oderSt = "Panding";
+        const bookTitle = services.name;
 
         // console.log(name, email)
         // const newUser = { "name": name, "email":email }
-        const newBookings = {bookID, userImg, name, email, phone, trans, oderSt }
+        const newBookings = {bookID, bookTitle, userImg, name, email, phone, trans, oderSt }
         
         fetch("http://localhost:5000/bookings", {
             method:'POST',
@@ -50,7 +51,7 @@ const ServiceDetails = () => {
         .then(res=>res.json())
         .then(res=>{
             if(res.insertedId){
-                alert("Welcome our Adventure");
+                alert("Welcome our Adventure!! You can cancel your booking between 7 days");
                 e.target.reset();
             }
         })
