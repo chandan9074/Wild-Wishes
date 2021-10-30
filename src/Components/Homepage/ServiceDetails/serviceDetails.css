@@ -1,0 +1,16 @@
+.booking-details-part {
+  background-color: rgb(20 23 32);
+}
+.book-left {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.book-right {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.place-b-underline {
+  width: 5rem;
+  border-top: 4px solid gray;
+  /* margin-left: 4rem; */
+  border-radius: 20rem;
+}

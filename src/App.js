@@ -8,6 +8,7 @@ import SignIn from './Components/Accountpage/SignIn';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Components/Private route/PrivateRoute'
 import MyBooking from './Components/My-Orders/MyBooking';
+import ServiceDetails from './Components/Homepage/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <PrivateRoute exact path="/my-booking" >
               <MyBooking />
+            </PrivateRoute>
+            <PrivateRoute exact path="/booking-details/:id" >
+              <ServiceDetails />
             </PrivateRoute>
           </Switch>
           <Footer />
