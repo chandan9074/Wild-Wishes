@@ -48,7 +48,7 @@ const Homepage = () => {
             <section className="service-part">
                 <div className="container">
                     <div className="flex flex-col">
-                        <h1 className="text-gray-400">Services</h1>
+                        <h1 className="text-gray-400">Upcoming Adventures</h1>
                         <div className="service-underline"></div>
                     </div>
                     <HomepageService />

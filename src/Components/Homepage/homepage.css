@@ -90,9 +90,9 @@
   color: white;
 }
 .service-underline {
-  width: 5rem;
+  width: 18rem;
   border-top: 4px solid gray;
-  margin-left: 4rem;
+  margin-left: 10rem;
   border-radius: 20rem;
 }
 
@@ -145,7 +145,6 @@
   border-radius: 20rem;
 }
 
-
 /* Media query  */
 
 @media onlY screen and (min-width: 0px) and (max-width: 688px) {
@@ -183,9 +182,9 @@
     padding-bottom: 7rem;
   }
   .service-underline {
-    width: 4rem;
+    width: 12rem;
     border-top: 4px solid gray;
-    margin-left: 2.5rem;
+    margin-left: 6.5rem;
     border-radius: 20rem;
   }
 
