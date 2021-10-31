@@ -44,3 +44,23 @@
   background-color: rgb(20 23 32);
   position: relative;
 }
+
+/* media query  */
+
+@media onlY screen and (min-width: 0px) and (max-width: 688px) {
+  .footer-img {
+    display: none;
+  }
+  .footer-details {
+    width: 100%;
+    /* float: right; */
+  }
+  .sub-inpt {
+    width: 10rem;
+  }
+  .sub-btn {
+    background-color: rgb(48, 121, 143);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+  }
+}

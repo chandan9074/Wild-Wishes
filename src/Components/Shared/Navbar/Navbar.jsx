@@ -11,7 +11,7 @@ const Navigations = () => {
     // console.log("user hoto",user.photoURL);
     return ( 
         <div>
-            <Navbar className="navColor">
+            <Navbar collapseOnSelect expand="lg" className="navColor">
                 <Container>
                     <Navbar.Brand href="/"><Link to="/"  className="nav-title">Wild Wishes</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

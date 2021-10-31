@@ -42,7 +42,7 @@ const SingUp = (props) => {
                     <input type="text" required onChange={handleName} placeholder="Enter FullName" className="text-base w-72 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                     <input type="email" required onChange={handleEmail} placeholder="Enter Email" className="text-base w-72 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                     <input type="password" required onChange={handlePassword} placeholder="Enter Password" className="focus:outline-none text-base w-72 p-2 mb-2 rounded-md shadow border-2 border-blue-500" />
-                    {/* {error ? <p className="p-2 bg-yellow-300 rounded-lg mt-3">{error}</p>:null} */}
+                    {error ? <p className="p-2 w-72 bg-yellow-300 rounded-lg mt-2 mb-0">{error}</p>:null}
                     <button type="submit" className="card-sign-btn rounded-lg font-semibold mt-3 mx-auto py-1">Sign Up</button>
                 </form>
                 <p className="text-gray-700 font-semibold text-md mt-2">or sign Up using</p>

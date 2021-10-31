@@ -60,14 +60,14 @@ const Homepage = () => {
                 <div className="container ">
                     <h1 className="text-gray-400">Ongoing Events</h1>
                     <div className="event-underline mb-5"></div>
-                    <div className="flex justify-center evant-img-part relative">
-                    <img src="https://i.ibb.co/Wghhznr/new.jpg" alt="" className="absolute top-10 even-bg rounded" />
-                    <i class="fas fa-hourglass-half text-yellow-400 absolute left-28 top-16 text-lg"></i>
-                        <img src="https://i.ibb.co/VCw7w9m/pexels-photo-1122462.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full" alt="" />
-                        <img src="https://i.ibb.co/56FC6n3/pexels-photo-758744.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full mx-4" alt="" />
+                    <div className="flex md:flex-row flex-col items-center justify-center evant-img-part relative">
+                        <img src="https://i.ibb.co/Wghhznr/new.jpg" alt="" className="absolute top-5 md:top-10 even-bg rounded" />
+                        <i class="fas fa-hourglass-half text-yellow-400 absolute top-10 left-16 md:left-28 md:top-16 text-lg"></i>
+                        <img src="https://i.ibb.co/VCw7w9m/pexels-photo-1122462.jpg" className="w-80 h-80 border-5 mt-16 md:mt-0 event-img border-gray-200 rounded-full" alt="" />
+                        <img src="https://i.ibb.co/56FC6n3/pexels-photo-758744.jpg" className="w-80 h-80 my-4 md:my-0 border-5 event-img border-gray-200 rounded-full md:mx-4" alt="" />
                         <img src="https://i.ibb.co/3704NHy/pexels-photo-1305095.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full" alt="" />
                     </div>
-                    <p className="w-2/3 mx-auto text-lg font-semibold text-center text-gray-300 mt-4">Outdoor adventurous activities are typically undertaken for the purposes of recreation or excitement: examples are adventure racing and adventure tourism. Adventurous activities can also lead to gains in knowledge, such as those undertaken by explorers and pioneers – the British adventurer Jason Lewis, for example.</p>
+                    <p className="w-2/3 mx-auto text-lg font-semibold text-center text-gray-300 md:mt-4 mt-14 ongoin-des">Outdoor adventurous activities are typically undertaken for the purposes of recreation or excitement: examples are adventure racing and adventure tourism. Adventurous activities can also lead to gains in knowledge, such as those undertaken by explorers and pioneers – the British adventurer Jason Lewis, for example.</p>
                     <div className="w-full flex flex-col justify-center items-center">
                         <p className=" text-base font-bold text-yellow-400"><i class="fas fa-calendar-alt mr-2"></i> Oct 27, 2021 - Nov 15, 2021</p>
                         <button onClick={handleJoin} className="text-white py-2 px-3 font-bold rounded-full join-btn" >Join Us</button>
@@ -82,7 +82,7 @@ const Homepage = () => {
                     <h1 className="text-gray-300">User feedback</h1>
                     <div className="feed-underline mb-5"></div>
                     <div className="flex justify-center flex-col">
-                        <div className=" flex justify-center w-full">
+                        <div className=" flex flex-col md:flex-row justify-center w-full">
                             <div className="w-80 relative">
                                     <img src="https://i.ibb.co/N3TMdh6/Handsome-mid-adult-man-with-beard-standing-with-crossed-hands-and-looking-at-camera-Mature-middle-ea.jpg" alt="" className=" absolute w-24 h-24 rounded-full" />
                                 <button onClick={handleRate} className="bg-yellow-400 text-base font-semibold absolute rate-btn py-1 px-2 rounded-lg ">Rate us</button>
@@ -98,7 +98,7 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-80 relative">
+                            <div className="w-80 relative my-5 md:my-0">
                                     <img src="https://i.ibb.co/8d3vDHP/Portrait-of-happy-young-man-leaning-against-wall-isolated-on-grey-background-with-a-big-smile-Handso.jpg" alt="" className=" absolute w-24 h-24 rounded-full" />
                                 <button onClick={handleRate} className="bg-yellow-400 text-base font-semibold absolute rate-btn py-1 px-2 rounded-lg ">Rate us</button>
                                 <div className=" mt-10 ml-12 w-3/4 rounded-lg border-4 border-gray-400 py-3 px-4  text-justify">
@@ -131,16 +131,16 @@ const Homepage = () => {
                             </div>
                         </div>
                         <div className="w-full flex justify-center mt-20">
-                            <div className="w-4/5 flex justify-around bg-yellow-400 py-4 px-5 rounded-lg">
+                            <div className="w-4/5 flex flex-col md:flex-row justify-around bg-yellow-400 py-4 px-5 rounded-lg">
                                 <div>
                                     <h1 className="text-center text-4xl font-bold">Adventure Done</h1>
                                     <div className="feed-details-underline"></div>
-                                    <h3 className="text-center mt-4 text-3xl font-bold">125+</h3>
+                                    <h3 className="text-center md:mt-4 text-3xl font-bold">125+</h3>
                                 </div>
                                 <div>
-                                    <h1 className="text-center text-4xl font-bold">Rating</h1>
+                                    <h1 className="text-center mt-4 md:mt-0 text-4xl font-bold">Rating</h1>
                                     <div className="feed-details-underline"></div>
-                                    <h3 className="text-center mt-4 text-3xl font-bold">4.5</h3>
+                                    <h3 className="text-center md:mt-4 text-3xl font-bold">4.5</h3>
                                     <div className="flex justify-center">
                                         <i class="fas fa-star text-red-800 mr-1"></i>
                                         <i class="fas fa-star text-red-800 mr-1"></i>
@@ -150,9 +150,9 @@ const Homepage = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h1 className="text-center text-4xl font-bold">Members</h1>
+                                    <h1 className="text-center mt-4 md:mt-0 text-4xl font-bold">Members</h1>
                                     <div className="feed-details-underline"></div>
-                                    <h3 className="text-center mt-4 text-3xl font-bold">11,000+</h3>
+                                    <h3 className="text-center md:mt-4 text-3xl font-bold">11,000+</h3>
                                 </div>
                             </div>
                         </div>

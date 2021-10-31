@@ -11,7 +11,7 @@ import useFirebase from '../../hooks/useFirebase';
 
 const SignIn = (props) => {
 
-    const {setEmail, setPassword, signInWithEmail, googleSignIn, error} = useAuth();
+    const {setEmail, setPassword, signInWithEmail, googleSignIn, error, setError} = useAuth();
     const [isLogin , setIsLogin] = useState(true);
 
     const handleEmail = (e) =>{
@@ -25,11 +25,11 @@ const SignIn = (props) => {
     
      const handleLogin = () =>{
         setIsLogin(true);
-        // setError("");
+        setError("");
     }
     const handleSignIn = () =>{
         setIsLogin(false);
-        // setError("");
+        setError("");
     }
     
 
@@ -47,7 +47,7 @@ const SignIn = (props) => {
                 <form onSubmit={(e)=>signInWithEmail(e)}  className="flex flex-col justify-center">
                     <input type="email" required onChange={handleEmail} placeholder="Enter Email" className="inpt-f text-base w-72 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                     <input type="password" required onChange={handlePassword} placeholder="Enter Password" className="inpt-f focus:outline-none text-base w-72 p-2 mb-2 rounded-md shadow border-2 border-blue-500" />
-                    {error ? <p className="p-2 bg-yellow-300 rounded-lg mt-3">{error}</p>:null}
+                    {error ? <p className="p-2 w-72 bg-yellow-300 rounded-lg mt-2 mb-0">{error}</p>:null}
                     <button type="submit" className="card-sign-btn rounded-lg font-semibold mt-3 mx-auto py-1">Sign In</button>
                 </form>
                 <p className="text-gray-700 font-semibold text-md mt-2">or sign in using</p>

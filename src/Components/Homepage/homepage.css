@@ -31,7 +31,7 @@
   width: 20%;
   /* background-color: rgba(128, 128, 128, 0.5); */
   padding: 2rem;
-  border-radius: 62% 54% 25% 70%;
+  /* border-radius: 62% 54% 25% 70%; */
 }
 .home-part-img1 {
   position: absolute;
@@ -157,4 +157,82 @@
   border-top: 4px solid gray;
   margin-left: 7rem;
   border-radius: 20rem;
+}
+
+/* Media query  */
+
+@media onlY screen and (min-width: 0px) and (max-width: 688px) {
+  /* banner part  */
+
+  .home-part-img1 {
+    top: 32rem;
+    right: 14rem;
+    width: 7rem;
+    height: 19rem;
+  }
+  .home-part-img2 {
+    top: 32rem;
+    right: 9rem;
+    width: 7rem;
+    height: 19rem;
+  }
+  .home-part-img3 {
+    top: 32rem;
+    right: 4rem;
+    width: 7rem;
+    height: 19rem;
+  }
+  .banner-des {
+    position: absolute;
+    top: 0%;
+    /* top: 50%; */
+    left: 0.7rem;
+    width: 90%;
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    padding: 2rem;
+    /* border-radius: 62% 54% 25% 70%; */
+  }
+
+  /* service part  */
+
+  .service-part {
+    padding-bottom: 7rem;
+  }
+  .service-underline {
+    width: 4rem;
+    border-top: 4px solid gray;
+    margin-left: 2.5rem;
+    border-radius: 20rem;
+  }
+
+  /* ongoing event  */
+
+  .even-bg {
+    width: 80%;
+    height: 68rem;
+  }
+  .ongoin-des {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .event-underline {
+    width: 7rem;
+    border-top: 4px solid gray;
+    margin-left: 5.5rem;
+    border-radius: 20rem;
+  }
+
+  /* feedback  */
+  .feed-details-underline {
+    width: 12rem;
+    border-radius: 10rem;
+  }
+
+  .feed-underline {
+    width: 6rem;
+    margin-left: 5rem;
+  }
 }
