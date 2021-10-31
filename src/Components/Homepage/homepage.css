@@ -106,3 +106,28 @@
   margin-left: 4rem;
   border-radius: 20rem;
 }
+
+.ongoing-part {
+  background-color: rgb(20 23 32);
+}
+.evant-img-part {
+  z-index: 2;
+}
+.even-bg {
+  z-index: -1;
+  width: 70rem;
+  height: 15rem;
+}
+.event-img {
+  box-shadow: 0 0 2rem rgb(12, 12, 12);
+}
+.event-underline {
+  width: 9rem;
+  border-top: 4px solid gray;
+  margin-left: 9rem;
+  border-radius: 20rem;
+}
+
+.join-btn {
+  background-color: rgb(48, 121, 143);
+}

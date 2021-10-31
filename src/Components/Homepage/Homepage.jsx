@@ -57,6 +57,26 @@ const Homepage = () => {
                     <HomepageService />
                 </div>
             </section>
+
+            {/* Ongoing events  */}
+            <section className="pt-10 pb-20 ongoing-part">
+                <div className="container ">
+                    <h1 className="text-gray-400">Ongoing Events</h1>
+                    <div className="event-underline mb-5"></div>
+                    <div className="flex justify-center evant-img-part relative">
+                    <img src="https://i.ibb.co/Wghhznr/new.jpg" alt="" className="absolute top-10 even-bg rounded" />
+                    <i class="fas fa-hourglass-half text-yellow-400 absolute left-28 top-16 text-lg"></i>
+                        <img src="https://i.ibb.co/VCw7w9m/pexels-photo-1122462.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full" alt="" />
+                        <img src="https://i.ibb.co/56FC6n3/pexels-photo-758744.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full mx-4" alt="" />
+                        <img src="https://i.ibb.co/3704NHy/pexels-photo-1305095.jpg" className="w-80 h-80 border-5 event-img border-gray-200 rounded-full" alt="" />
+                    </div>
+                    <p className="w-2/3 mx-auto text-lg font-semibold text-center text-gray-300 mt-4">Outdoor adventurous activities are typically undertaken for the purposes of recreation or excitement: examples are adventure racing and adventure tourism. Adventurous activities can also lead to gains in knowledge, such as those undertaken by explorers and pioneers – the British adventurer Jason Lewis, for example.</p>
+                    <div className="w-full flex flex-col justify-center items-center">
+                        <p className=" text-base font-bold text-yellow-400"><i class="fas fa-calendar-alt mr-2"></i> Oct 27, 2021 - Nov 15, 2021</p>
+                        <button className="text-white py-2 px-3 font-bold rounded-full join-btn" >Join Us</button>
+                    </div>
+                </div>
+            </section>
         </div>
      );
 }

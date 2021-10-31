@@ -11,10 +11,12 @@
 .sub-btn {
   background-color: rgb(48, 121, 143);
   padding: 0.3rem 0.5rem;
+  border-radius: 0 0.2rem 0.2rem 0;
 }
 .sub-inpt {
   padding: 0.3rem 1rem;
   width: 20rem;
+  border-radius: 0.2rem 0 0 0.2rem;
 }
 .footer-hr {
   width: 90%;
