@@ -17,24 +17,24 @@ const Navigations = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto ml-20">
                         <Nav.Link>
-                        <Link to="/"  className="nav-btn text-xl md:ml-2">Home</Link>
+                        <Link to="/"  className="nav-btn text-lg md:ml-2">Home</Link>
                         </Nav.Link>
                         {user.email ? 
                         <Nav.Link>
-                            <Link to="/my-booking" className="nav-btn text-xl md:ml-2">My Bookings</Link>
+                            <Link to="/my-booking" className="nav-btn text-lg md:ml-2">My Bookings</Link>
                         </Nav.Link>: null }
                         {user.email ? 
                         <Nav.Link>
-                            <Link to="/manage-booking" className="nav-btn text-xl md:ml-2">Manage All Bookings</Link>
+                            <Link to="/manage-booking" className="nav-btn text-lg md:ml-2">Manage All Bookings</Link>
                         </Nav.Link>: null }
                         {user.email ? 
                         <Nav.Link>
-                            <Link to="/add-tour" className="nav-btn text-xl md:ml-2">Add New Tour</Link>
+                            <Link to="/add-tour" className="nav-btn text-lg md:ml-2">Add New Tour</Link>
                         </Nav.Link> : null }
                     </Nav>
                     <Nav className="md:flex items-center">
                         {user.photoURL? <Nav.Link><img src={user.photoURL} alt="" className="w-10 rounded-full" /></Nav.Link>:null}
-                            <Nav.Link className="text-xl text-white">{user.displayName}</Nav.Link>
+                            <Nav.Link className="text-lg text-white">{user.displayName}</Nav.Link>
                             {user.email? 
                             <Nav.Link>
                                 <Link to="/"  className="sign-btn font-bold" onClick={logout}>Logout</Link>

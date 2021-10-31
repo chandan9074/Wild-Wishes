@@ -19,12 +19,13 @@
 .sign-btn {
   padding: 0.3rem 1rem;
   border: 1px solid rgb(2, 82, 82);
-  background-color: aqua;
-  color: black;
+  background-color: rgb(33, 167, 207);
+  color: rgb(243, 239, 239);
+  /* color: salmon; */
   border-radius: 10rem;
   text-decoration: none;
   outline: none;
 }
 .sign-btn:hover {
-  color: black;
+  color: rgb(243, 240, 240);
 }

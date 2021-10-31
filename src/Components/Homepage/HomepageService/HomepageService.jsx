@@ -27,7 +27,7 @@ const HomepageService = () => {
                 <div class="dot1"></div>
                 <div class="dot2"></div>
                 </div>:
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-40">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-40 ml-5 md:ml-0">
             {
                 services.map(service=> <SingleService key={service._id} service={service} /> )
             }

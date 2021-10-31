@@ -82,7 +82,7 @@ const Homepage = () => {
                     <h1 className="text-gray-400">Overview</h1>
                     <div className="feed-underline mb-5"></div>
                     <div className="flex justify-center flex-col">
-                        <div className=" flex flex-col md:flex-row justify-center w-full">
+                        <div className=" flex flex-col md:flex-row items-center md:items-start justify-center w-full">
                             <div className="w-80 mb-5 md:mb-0 relative">
                                     <img src="https://i.ibb.co/N3TMdh6/Handsome-mid-adult-man-with-beard-standing-with-crossed-hands-and-looking-at-camera-Mature-middle-ea.jpg" alt="" className=" absolute w-24 h-24 rounded-full" />
                                 <button onClick={handleRate} className="bg-yellow-400 text-base font-semibold absolute rate-btn py-1 px-2 rounded-lg ">Rate us</button>
