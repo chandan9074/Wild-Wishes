@@ -19,15 +19,18 @@ const Navigations = () => {
                         <Nav.Link>
                         <Link to="/"  className="nav-btn text-xl md:ml-2">Home</Link>
                         </Nav.Link>
+                        {user.email ? 
                         <Nav.Link>
                             <Link to="/my-booking" className="nav-btn text-xl md:ml-2">My Bookings</Link>
-                        </Nav.Link>
+                        </Nav.Link>: null }
+                        {user.email ? 
                         <Nav.Link>
                             <Link to="/manage-booking" className="nav-btn text-xl md:ml-2">Manage All Bookings</Link>
-                        </Nav.Link>
+                        </Nav.Link>: null }
+                        {user.email ? 
                         <Nav.Link>
                             <Link to="/add-tour" className="nav-btn text-xl md:ml-2">Add New Tour</Link>
-                        </Nav.Link>
+                        </Nav.Link> : null }
                     </Nav>
                     <Nav className="md:flex items-center">
                         {user.photoURL? <Nav.Link><img src={user.photoURL} alt="" className="w-10 rounded-full" /></Nav.Link>:null}
