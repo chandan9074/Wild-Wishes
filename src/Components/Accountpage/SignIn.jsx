@@ -1,13 +1,10 @@
 // import pakages
 import React, { useState } from 'react';
-// import useAuth from '../../hooks/useAuth';
-import Footer from '../Shared/Footer/Footer';
 import useAuth from '../../hooks/useAuth'; 
 
 // import files 
 import './accounts.css';
 import SingUp from './SignUp';
-import useFirebase from '../../hooks/useFirebase';
 
 const SignIn = (props) => {
 
@@ -16,14 +13,13 @@ const SignIn = (props) => {
 
     const handleEmail = (e) =>{
         setEmail(e.target.value);
-        // console.log("hello")
     }
     const handlePassword = (e) =>{
-        // console.log("hello")
         setPassword(e.target.value);
     }
     
-     const handleLogin = () =>{
+    // handle accounts toggle
+    const handleLogin = () =>{
         setIsLogin(true);
         setError("");
     }
@@ -37,7 +33,6 @@ const SignIn = (props) => {
         <div>
             {isLogin?
         <div className="sign-part flex justify-center items-center">
-                
             <div className="sing-back-part flex flex-col justify-end md:justify-center items-end">
                 <p className="text-gray-800 text-xl md:text-2xl font-bold mr-11">Create a new account?</p> 
                 <button onClick={handleSignIn} className="back-card-sign-btn rounded-lg font-semibold py-1">Sign Up</button>

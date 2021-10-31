@@ -1,13 +1,12 @@
+//import pakage
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
-import useBookings from '../../hooks/useBooking';
 
-
+//import files
 import './myBooking.css';
 
 const MyBooking = () => {
 
-    // const [bookings] = useBookings();
     const [mybook, setMybook] = useState([]);
     const {user} = useAuth()
 
@@ -19,14 +18,12 @@ const MyBooking = () => {
             .then(res =>{
                 const userBook = res.filter(book => book.email === user.email);
                 setMybook(userBook);
-                console.log(userBook);
                 setDataLoding(false);
             })
-        // console.log("hello", bookings)
     }, [])
 
+    //handle delete part
     const handleDelete = (id) =>{
-        // console.log("dukhche")
         const confirmed = window.confirm("Are you sure, you want to delete this bookings?");
         if(confirmed){
             const url = `http://localhost:5000/bookings/${id}`;
@@ -86,7 +83,6 @@ const MyBooking = () => {
                 </div> }
                 </div>}
             </div>
-            
         </div>
      );
 }

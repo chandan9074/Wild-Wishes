@@ -11,10 +11,11 @@
 .place-b-underline {
   width: 5rem;
   border-top: 4px solid gray;
-  /* margin-left: 4rem; */
   border-radius: 20rem;
 }
 
+
+ /* media query  */
 @media onlY screen and (min-width: 0px) and (max-width: 688px) {
   .book-left {
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;

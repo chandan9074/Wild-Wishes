@@ -17,6 +17,8 @@
   border-radius: 20rem;
 }
 
+/* media query  */
+
 @media onlY screen and (min-width: 0px) and (max-width: 688px) {
   .add-tour-img {
     width: 22rem;
@@ -27,7 +29,6 @@
     width: 20rem;
     left: auto;
     right: auto;
-    /* display: none; */
   }
   .add-tour-part {
     background-color: rgb(20 23 32);

@@ -1,10 +1,11 @@
+//import pakage
 import React, { useRef } from 'react';
 
-
+//import files
 import './addTour.css';
 
 const AddTour = () => {
-
+    //set useref
     const titleref = useRef();
     const desref = useRef();
     const destinationref = useRef();
@@ -15,6 +16,7 @@ const AddTour = () => {
     const limitref = useRef();
     const imgref = useRef();
 
+    // handle tour submit 
     const handleTour = (e) =>{
         
         const name = titleref.current.value;
@@ -26,8 +28,8 @@ const AddTour = () => {
         const price = feeref.current.value;
         const sit_limit = limitref.current.value;
         const img = imgref.current.value;
-        // const newUser = { "name": name, "email":email }
         
+        // concat date data
         const date = dateS.concat(" - ", dateE)
 
         const newTour = {img, name, des, date, place, days, price, sit_limit}

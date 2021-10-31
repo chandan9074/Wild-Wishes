@@ -1,17 +1,15 @@
 // import pakages
-import React, { useState } from 'react';
+import React from 'react';
 
 // import files
-// import SignIn from './SignIn';
 import useAuth from '../../hooks/useAuth';
-import useFirebase from '../../hooks/useFirebase';
 import './accounts.css';
 
 
 const SingUp = (props) => {
 
-    const {setEmail,setName, setPassword, createSingInWithEmail, googleSignIn, error, setError} = useAuth();
-    // const [isLogin , setIsLogin] = useState(true);
+    //distructure auth
+    const {setEmail,setName, setPassword, createSingInWithEmail, googleSignIn, error} = useAuth();
 
     const handleName = (e) =>{
         setName(e.target.value);
@@ -25,9 +23,7 @@ const SingUp = (props) => {
 
     // handle toggle by those function 
     const handleLog = () =>{
-        console.log("hello")
-        props.handleLogin()
-
+        props.handleLogin();
     }
 
     return ( 
@@ -51,7 +47,6 @@ const SingUp = (props) => {
                 </div>
             </div>
         </div>
-        
      );
 }
  

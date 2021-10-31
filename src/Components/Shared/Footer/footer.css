@@ -1,6 +1,5 @@
 .footer-details {
   width: 65%;
-  /* float: right; */
 }
 .wild-font {
   font-family: "Ceviche One", cursive;
@@ -8,9 +7,7 @@
 }
 .footerPart {
   padding: 3rem 0;
-  /* padding-bottom: 5rem; */
   background-color: rgb(15, 41, 56);
-  /* position: relative; */
 }
 .sub-btn {
   background-color: rgb(48, 121, 143);
@@ -37,7 +34,6 @@
 .footer-img {
   position: absolute;
   top: 0;
-  /* bottom: 10rem; */
   left: 4rem;
   width: 25rem;
   height: 33rem;
@@ -57,7 +53,6 @@
   }
   .footer-details {
     width: 100%;
-    /* float: right; */
   }
   .sub-inpt {
     width: 10rem;

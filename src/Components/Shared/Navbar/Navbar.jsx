@@ -1,14 +1,13 @@
+// import pakages
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
-
+// import files 
 import './navbar.css'
 const Navigations = () => {
     const {user, logout} = useAuth()
-
-    // console.log("user hoto",user.photoURL);
     return ( 
         <div>
             <Navbar collapseOnSelect expand="lg" className="navColor">
@@ -41,10 +40,6 @@ const Navigations = () => {
                                 <Link to="/accounts"  className="sign-btn font-bold" onClick={logout}>Sing In</Link>
                             </Nav.Link>    
                         }
-                        {/* <Nav.Link>More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            <Link to="/accounts" className="sign-btn font-bold">Sing In</Link>
-                        </Nav.Link> */}
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

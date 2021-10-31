@@ -1,6 +1,9 @@
+//import pakages
 import React, { useEffect, useState } from 'react';
-import SingleService from './SingleService';
 
+
+//import files
+import SingleService from './SingleService';
 import './service.css'
 
 const HomepageService = () => {
@@ -8,12 +11,12 @@ const HomepageService = () => {
     const [services, setServices] = useState([]);
     const [dataLoding, setDataLoding] = useState(true);
 
+    //get data
     useEffect(()=>{
         fetch("http://localhost:5000/services")
         .then(res=>res.json())
         .then(res=>{
             setServices(res)
-            console.log(res)
             setDataLoding(false)
         })
     },[])

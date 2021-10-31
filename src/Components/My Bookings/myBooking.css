@@ -8,7 +8,6 @@
   background-color: aquamarine;
 }
 .fa-trash:hover {
-  /* font-size: 1.2rem; */
   box-shadow: 0 0 0.3rem gray;
 }
 .fa-check-circle:hover {
@@ -27,6 +26,7 @@
   border-radius: 20rem;
 }
 
+ /* media query  */
 @media onlY screen and (min-width: 0px) and (max-width: 688px) {
   .all-order-underline {
     width: 7rem;
@@ -34,7 +34,6 @@
     margin-left: 3rem;
     border-radius: 20rem;
   }
-
   .my-order-underline {
     width: 6rem;
     border-top: 4px solid gray;

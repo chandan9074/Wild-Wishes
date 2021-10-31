@@ -1,3 +1,4 @@
+//import pakages
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 
@@ -11,22 +12,18 @@ const ManageAllBook = () => {
 
     useEffect(()=>{
         getServices()
-        // console.log("hello", bookings)
     }, [])
 
     const getServices = () =>{
         fetch("http://localhost:5000/my-bookings")
             .then(res => res.json())
             .then(res =>{
-                // const userBook = res.filter(book => book.email === user.email);
                 setAllbook(res);
                 setDataLoding(false)
-                // console.log(userBook);
             })
     }
 
     const handleDelete = (id) =>{
-        // console.log("dukhche")
         const confirmed = window.confirm("Are you sure, you want to delete this bookings?");
         if(confirmed){
             const url = `http://localhost:5000/bookings/${id}`;
@@ -45,7 +42,6 @@ const ManageAllBook = () => {
     }
 
     const handleUpdate = (id, orderSt) =>{
-
         if(orderSt==="Panding"){
             const newOrderSt = "Aproved";
             const updateUser ={newOrderSt}
@@ -64,8 +60,6 @@ const ManageAllBook = () => {
                 }
             })
         }
-
-        // e.preventDefault();
     }
 
     return ( 
@@ -112,7 +106,6 @@ const ManageAllBook = () => {
                 </div>}
                 </div>}
             </div>
-            
         </div>
      );
 }

@@ -1,8 +1,9 @@
+//import pakages
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleService = (props) => {
-
+    // distructure service 
     const {_id, img, name, des} = props.service;
 
     return ( 

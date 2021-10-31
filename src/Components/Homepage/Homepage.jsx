@@ -1,15 +1,18 @@
+//import pakages
 import React from 'react';
 
-
+//import files
 import './homepage.css';
 import HomepageService from './HomepageService/HomepageService';
 
 const Homepage = () => {
 
+    // handle rating click 
     const handleRate = () =>{
         alert("Thank you for your rating!!");
     }
 
+    // handle join click 
     const handleJoin = () =>{
         alert("Thank you for joining us!! We will contact with you as soon as possible.")
     }
@@ -43,14 +46,11 @@ const Homepage = () => {
             {/* services part  */}
 
             <section className="service-part">
-                {/* <div className="service-shade"></div> */}
                 <div className="container">
-                    {/* <div className="flag">chandan</div> */}
                     <div className="flex flex-col">
                         <h1 className="text-gray-400">Services</h1>
                         <div className="service-underline"></div>
                     </div>
-
                     <HomepageService />
                 </div>
             </section>

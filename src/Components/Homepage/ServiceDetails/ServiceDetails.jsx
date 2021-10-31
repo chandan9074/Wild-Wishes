@@ -1,7 +1,9 @@
+// import pakages 
 import React, { useEffect, useRef, useState } from 'react';
-import { Redirect, useParams, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
+//import files
 import './serviceDetails.css'
 
 const ServiceDetails = () => {
@@ -23,11 +25,12 @@ const ServiceDetails = () => {
         .then(res=>res.json())
         .then(res=>{
             setServices(res)
-            console.log(res)
             setDataLoding(false);
         })
     },[])
 
+
+    //handle booking submit
     const handleBooking = (e) =>{
         
         const name = nameref.current.value;
@@ -39,8 +42,6 @@ const ServiceDetails = () => {
         const oderSt = "Panding";
         const bookTitle = services.name;
 
-        // console.log(name, email)
-        // const newUser = { "name": name, "email":email }
         const newBookings = {bookID, bookTitle, userImg, name, email, phone, trans, oderSt }
         
         fetch("http://localhost:5000/bookings", {
@@ -61,7 +62,6 @@ const ServiceDetails = () => {
         .then(()=>{
             history.push("/");
         })
-        
         e.preventDefault();
     }
 

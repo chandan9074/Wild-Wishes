@@ -8,7 +8,6 @@
   border-radius: 50% 50% 50% 0;
 }
 .service-title {
-  /* width: 50%; */
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -47,6 +46,7 @@
   border: 1px solid rgb(2, 66, 66);
 }
 
+/* media query  */
 @media onlY screen and (min-width: 0px) and (max-width: 688px) {
   .single-service-part {
     margin: 6rem 0;
