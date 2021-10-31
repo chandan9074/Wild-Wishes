@@ -34,7 +34,7 @@ const AddTour = () => {
 
         const newTour = {img, name, des, date, place, days, price, sit_limit}
         
-        fetch("http://localhost:5000/services", {
+        fetch("https://chilling-moonlight-50293.herokuapp.com/services", {
             method:'POST',
             headers:{
                 'content-type': "application/json"

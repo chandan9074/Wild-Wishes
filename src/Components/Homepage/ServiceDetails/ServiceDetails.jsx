@@ -21,7 +21,7 @@ const ServiceDetails = () => {
     const [dataLoding, setDataLoding] = useState(true);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://chilling-moonlight-50293.herokuapp.com/services/${id}`)
         .then(res=>res.json())
         .then(res=>{
             setServices(res)

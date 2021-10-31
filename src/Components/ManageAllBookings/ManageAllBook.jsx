@@ -15,7 +15,7 @@ const ManageAllBook = () => {
     }, [])
 
     const getServices = () =>{
-        fetch("http://localhost:5000/my-bookings")
+        fetch("https://chilling-moonlight-50293.herokuapp.com/my-bookings")
             .then(res => res.json())
             .then(res =>{
                 setAllbook(res);
@@ -26,7 +26,7 @@ const ManageAllBook = () => {
     const handleDelete = (id) =>{
         const confirmed = window.confirm("Are you sure, you want to delete this bookings?");
         if(confirmed){
-            const url = `http://localhost:5000/bookings/${id}`;
+            const url = `https://chilling-moonlight-50293.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
@@ -45,7 +45,7 @@ const ManageAllBook = () => {
         if(orderSt==="Panding"){
             const newOrderSt = "Aproved";
             const updateUser ={newOrderSt}
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://chilling-moonlight-50293.herokuapp.com/bookings/${id}`, {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json"

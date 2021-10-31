@@ -13,7 +13,7 @@ const MyBooking = () => {
     const [dataLoding, setDataLoding] = useState(true);
 
     useEffect(()=>{
-        fetch("http://localhost:5000/my-bookings")
+        fetch("https://chilling-moonlight-50293.herokuapp.com/my-bookings")
             .then(res => res.json())
             .then(res =>{
                 const userBook = res.filter(book => book.email === user.email);
@@ -26,7 +26,7 @@ const MyBooking = () => {
     const handleDelete = (id) =>{
         const confirmed = window.confirm("Are you sure, you want to delete this bookings?");
         if(confirmed){
-            const url = `http://localhost:5000/bookings/${id}`;
+            const url = `https://chilling-moonlight-50293.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
