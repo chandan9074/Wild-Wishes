@@ -20,7 +20,7 @@ const Homepage = () => {
     return (
         <div>
             {/* headers part  */}
-            <section className="navColor">
+            <section className="header-part">
                 <div className="banner-part">
                     <img id="hp-slide" src="https://i.ibb.co/Yyy6HPm/h2.jpg" alt="" className="" />
                     <div className="banner-des" >
@@ -79,7 +79,7 @@ const Homepage = () => {
 
             <section  className="pt-10 pb-20 ongoing-part">
                 <div className="container">
-                    <h1 className="text-gray-400">User feedback</h1>
+                    <h1 className="text-gray-400">Overview</h1>
                     <div className="feed-underline mb-5"></div>
                     <div className="flex justify-center flex-col">
                         <div className=" flex flex-col md:flex-row justify-center w-full">

@@ -44,7 +44,7 @@ const ServiceDetails = () => {
 
         const newBookings = {bookID, bookTitle, userImg, name, email, phone, trans, oderSt }
         
-        fetch("http://localhost:5000/bookings", {
+        fetch("https://chilling-moonlight-50293.herokuapp.com/bookings", {
             method:'POST',
             headers:{
                 'content-type': "application/json"
