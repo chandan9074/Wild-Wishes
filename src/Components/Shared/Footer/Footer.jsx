@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import './footer.css'
 
 const Footer = () => {
+
+    const handleSubscribe = () =>{
+        alert("Thank you for subscribing us!!");
+        document.getElementById("subscribe").value="";
+
+    }
+
     return ( 
         <div className="align-footer">
 
@@ -14,8 +21,8 @@ const Footer = () => {
                 <div className="footer-underline mr-14"></div>
                 <h1 className="text-xl text-white ml-auto mr-14 mb-4">2021</h1>
                 <div className="mx-auto mb-5" >
-                    <input type="text" className="sub-inpt" placeholder="Enter your name" />
-                    <button className="text-white sub-btn">Subscribe Now</button>
+                    <input id="subscribe" type="text" className="sub-inpt" placeholder="Enter your name" />
+                    <button onClick={handleSubscribe} className="text-white sub-btn">Subscribe Now</button>
                 </div>  
                 <div className="flex justify-around">
                     <div className="flex flex-col">

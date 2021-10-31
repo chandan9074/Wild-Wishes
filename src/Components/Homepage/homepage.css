@@ -68,15 +68,17 @@
 }
 .explore-btn {
   padding: 0.5rem 2rem;
-  border: 2px solid rgb(2, 50, 65);
   float: left;
   margin-top: 1rem;
   cursor: pointer;
-  color: aliceblue;
-  background-color: rgb(4, 88, 114);
+  border: 3px solid rgb(202, 211, 216);
+  /* color: aliceblue;
+  background-color: rgb(4, 88, 114); */
+  /* background-color: rgba(4, 88, 114, 0.671); */
 }
 
 .explore-btn:hover {
+  border: 3px solid rgb(2, 50, 65);
   background-color: rgb(4, 88, 114);
   color: aliceblue;
 }
@@ -130,4 +132,29 @@
 
 .join-btn {
   background-color: rgb(48, 121, 143);
+}
+
+.rate-btn {
+  top: 18.5rem;
+  left: 41%;
+}
+.feedback-des {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.feed-details-underline {
+  width: 18rem;
+  border-top: 2px solid rgb(151, 150, 150);
+  /* margin-left: 9rem; */
+  border-radius: 10rem;
+}
+
+.feed-underline {
+  width: 9rem;
+  border-top: 4px solid gray;
+  margin-left: 7rem;
+  border-radius: 20rem;
 }
