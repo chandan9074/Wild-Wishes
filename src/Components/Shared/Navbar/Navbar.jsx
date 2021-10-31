@@ -13,7 +13,7 @@ const Navigations = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" className="navColor">
                 <Container>
-                    <Navbar.Brand href="/"><Link to="/"  className="nav-title">Wild Wishes</Link></Navbar.Brand>
+                    <Navbar.Brand href="/"><Link to="/"  className="nav-title text-3xl">Wild Wishes</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto ml-20">

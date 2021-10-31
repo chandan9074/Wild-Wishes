@@ -14,7 +14,7 @@ const useFirebase = () =>{
     const [loading, setLoading] = useState(true);
     const location = useLocation();
     const history = useHistory();
-    const redirectUrl = location.state?.form || '/';
+    const redirectUrl = location?.state?.from || '/';
 
     const googleprovider = new GoogleAuthProvider();
 

@@ -16,12 +16,15 @@ const ServiceDetails = () => {
     const phoneref = useRef();
     const transref = useRef();
 
+    const [dataLoding, setDataLoding] = useState(true);
+
     useEffect(()=>{
         fetch(`http://localhost:5000/services/${id}`)
         .then(res=>res.json())
         .then(res=>{
             setServices(res)
             console.log(res)
+            setDataLoding(false);
         })
     },[])
 
@@ -64,8 +67,12 @@ const ServiceDetails = () => {
 
     return ( 
         <div className="booking-details-part py-20">
-            <div className="flex  justify-center">
-                <div className="w-96 bg-gray-200 py-5 px-5 min-h-40 border-r-4 border-blue-300 book-left">
+            {dataLoding ? <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                </div>:
+            <div className="flex flex-col md:flex-row  justify-center">
+                <div className="md:w-96 bg-gray-200 py-5 px-5 min-h-40 md:border-r-4 md:border-blue-300 book-left">
                     <i class="fas fa-ghost absolute"></i>
                     <img src={services.img} className="w-56 h-56 rounded-full mx-auto mb-3 border-8 border-white shadow" alt="" />
                     <h1 className="text-2xl font-bold">{services.name}</h1>
@@ -80,7 +87,7 @@ const ServiceDetails = () => {
                         <p className="text-base font-semibold text-justify"><i class="fas fa-money-bill-wave"></i> {services.price}</p>
                     </div>
                 </div>
-                <div className="w-96 p-5 bg-gray-200 flex flex-col h-auto border-l-4 border-blue-300 book-right">
+                <div className="md:w-96 p-5 bg-gray-200 flex flex-col h-auto md:border-l-4 md:border-blue-300 book-right">
                     <h1 className="text-4xl mx-auto font-bold">Place Booking</h1>
                     <div className="place-b-underline mb-5 mx-auto"></div>
                     <form onSubmit={handleBooking} className="flex flex-col">
@@ -95,7 +102,7 @@ const ServiceDetails = () => {
                         <input type="submit" value="Book" className="card-sign-btn rounded-lg font-semibold mt-3 mx-auto py-1"/>
                     </form>
                 </div>
-            </div>
+            </div>}
         </div>
      );
 }

@@ -51,7 +51,7 @@ const AddTour = () => {
     }
 
     return ( 
-        <div className="py-40 add-tour-part">
+        <div className="md:py-40 add-tour-part">
             <div className="w-full flex justify-center items-center relative">
                 <img src="https://i.ibb.co/f18Zd1V/pexels-photo-2859169.jpg" alt="" className="add-tour-img" />
                 <div className="bg-gray-200 py-5 px-5 add-tour-card">
@@ -64,7 +64,7 @@ const AddTour = () => {
                         <input type="text" ref={imgref} required placeholder="Enter image url" className="inpt-f text-base w-full p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                         <label className="text-xl font-semibold mb-1">Description</label>
                         <textarea name="" ref={desref} className="resize-none p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500" cols="10" rows="6" placeholder="About this Adventure.."></textarea>
-                        <div className="flex justify-between">
+                        <div className="flex flex-col md:flex-row justify-between">
                             <div className="flex flex-col">
                                 <label className="text-xl font-semibold mb-1">Destination</label>
                                 <input type="text" ref={destinationref} required placeholder="Enter destination" className="inpt-f text-base w-52 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
@@ -75,11 +75,11 @@ const AddTour = () => {
                             </div>
                         </div>
                         <label className="text-xl font-semibold mb-1">Date</label>
-                        <div className="flex justify-between">
+                        <div className="flex flex-col md:flex-row justify-between">
                             <input type="text" ref={dateSref} required placeholder="Enter starting date" className="inpt-f text-base w-52 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                             <input type="text" ref={dateEref} required placeholder="Enter ending date" className="inpt-f text-base w-52 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>
                         </div>
-                        <div className="flex justify-between">
+                        <div className="flex flex-col md:flex-row justify-between">
                             <div className="flex flex-col">
                                 <label className="text-xl font-semibold mb-1">Fee</label>
                                 <input type="text" ref={feeref} required placeholder="Enter entry fee" className="inpt-f text-base w-52 p-2 mb-2 rounded-md shadow focus:outline-none border-2 border-blue-500"/>

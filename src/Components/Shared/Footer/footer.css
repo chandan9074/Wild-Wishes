@@ -2,6 +2,10 @@
   width: 65%;
   /* float: right; */
 }
+.wild-font {
+  font-family: "Ceviche One", cursive;
+  margin-bottom: 0;
+}
 .footerPart {
   padding: 3rem 0;
   /* padding-bottom: 5rem; */
@@ -58,9 +62,7 @@
   .sub-inpt {
     width: 10rem;
   }
-  .sub-btn {
-    background-color: rgb(48, 121, 143);
-    padding: 0.3rem 0.5rem;
-    border-radius: 0 0.2rem 0.2rem 0;
+  .align-footer {
+    padding-top: 0rem;
   }
 }

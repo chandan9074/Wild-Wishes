@@ -14,3 +14,16 @@
   /* margin-left: 4rem; */
   border-radius: 20rem;
 }
+
+@media onlY screen and (min-width: 0px) and (max-width: 688px) {
+  .book-left {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 22rem;
+    margin: 0 auto;
+  }
+  .book-right {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 22rem;
+    margin: 1rem auto 0 auto;
+  }
+}

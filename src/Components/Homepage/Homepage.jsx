@@ -22,7 +22,7 @@ const Homepage = () => {
                     <img id="hp-slide" src="https://i.ibb.co/Yyy6HPm/h2.jpg" alt="" className="" />
                     <div className="banner-des" >
                         <div className="flex items-center justify-center" >
-                            <h1 className="text-9xl font-bold">W</h1>
+                            <h1 className="text-9xl w-title font-bold">W</h1>
                             <div className="leading-4">
                                 <h1 className="text-gray-800 font-extrabold home-title text-left mb-0" >ILD</h1>
                                 <h1 className="text-gray-800 font-extrabold home-title text-left mb-0" >ISHES</h1>
@@ -58,7 +58,7 @@ const Homepage = () => {
             {/* Ongoing events  */}
             <section className="pt-10 pb-20 ongoing-part">
                 <div className="container ">
-                    <h1 className="text-gray-400">Ongoing Events</h1>
+                    <h1 className="text-gray-400 page-title">Ongoing Events</h1>
                     <div className="event-underline mb-5"></div>
                     <div className="flex md:flex-row flex-col items-center justify-center evant-img-part relative">
                         <img src="https://i.ibb.co/Wghhznr/new.jpg" alt="" className="absolute top-5 md:top-10 even-bg rounded" />
@@ -79,11 +79,11 @@ const Homepage = () => {
 
             <section  className="pt-10 pb-20 ongoing-part">
                 <div className="container">
-                    <h1 className="text-gray-300">User feedback</h1>
+                    <h1 className="text-gray-400">User feedback</h1>
                     <div className="feed-underline mb-5"></div>
                     <div className="flex justify-center flex-col">
                         <div className=" flex flex-col md:flex-row justify-center w-full">
-                            <div className="w-80 relative">
+                            <div className="w-80 mb-5 md:mb-0 relative">
                                     <img src="https://i.ibb.co/N3TMdh6/Handsome-mid-adult-man-with-beard-standing-with-crossed-hands-and-looking-at-camera-Mature-middle-ea.jpg" alt="" className=" absolute w-24 h-24 rounded-full" />
                                 <button onClick={handleRate} className="bg-yellow-400 text-base font-semibold absolute rate-btn py-1 px-2 rounded-lg ">Rate us</button>
                                 <div className=" mt-10 ml-12 w-3/4 rounded-lg border-4 border-gray-400 py-3 px-4  text-justify">
@@ -98,7 +98,7 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-80 relative my-5 md:my-0">
+                            <div className="w-80 mb-5 md:mb-0 relative">
                                     <img src="https://i.ibb.co/8d3vDHP/Portrait-of-happy-young-man-leaning-against-wall-isolated-on-grey-background-with-a-big-smile-Handso.jpg" alt="" className=" absolute w-24 h-24 rounded-full" />
                                 <button onClick={handleRate} className="bg-yellow-400 text-base font-semibold absolute rate-btn py-1 px-2 rounded-lg ">Rate us</button>
                                 <div className=" mt-10 ml-12 w-3/4 rounded-lg border-4 border-gray-400 py-3 px-4  text-justify">
@@ -134,14 +134,14 @@ const Homepage = () => {
                             <div className="w-4/5 flex flex-col md:flex-row justify-around bg-yellow-400 py-4 px-5 rounded-lg">
                                 <div>
                                     <h1 className="text-center text-4xl font-bold">Adventure Done</h1>
-                                    <div className="feed-details-underline"></div>
-                                    <h3 className="text-center md:mt-4 text-3xl font-bold">125+</h3>
+                                    <div className="feed-details-underline md:mb-5"></div>
+                                    <h3 className="text-center text-3xl mb-4 md:mb-0 font-bold digit-family">125+</h3>
                                 </div>
                                 <div>
-                                    <h1 className="text-center mt-4 md:mt-0 text-4xl font-bold">Rating</h1>
-                                    <div className="feed-details-underline"></div>
-                                    <h3 className="text-center md:mt-4 text-3xl font-bold">4.5</h3>
-                                    <div className="flex justify-center">
+                                    <h1 className="text-center text-4xl font-bold">Rating</h1>
+                                    <div className="feed-details-underline md:mb-4"></div>
+                                    <h3 className="text-center text-3xl font-bold digit-family">4.5</h3>
+                                    <div className="flex justify-center mb-4 md:mb-0">
                                         <i class="fas fa-star text-red-800 mr-1"></i>
                                         <i class="fas fa-star text-red-800 mr-1"></i>
                                         <i class="fas fa-star text-red-800 mr-1"></i>
@@ -150,9 +150,9 @@ const Homepage = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h1 className="text-center mt-4 md:mt-0 text-4xl font-bold">Members</h1>
-                                    <div className="feed-details-underline"></div>
-                                    <h3 className="text-center md:mt-4 text-3xl font-bold">11,000+</h3>
+                                    <h1 className="text-center  text-4xl font-bold">Members</h1>
+                                    <div className="feed-details-underline md:mb-4"></div>
+                                    <h3 className="text-center text-3xl font-bold digit-family">11,000+</h3>
                                 </div>
                             </div>
                         </div>

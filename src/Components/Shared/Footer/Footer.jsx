@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footerPart flex justify-end">
             <img src="https://i.ibb.co/dLM1bxJ/footer.jpg" alt="" className="footer-img" />
             <div className="flex flex-col footer-details px-2 md:px-0">
-                <h1 className="text-3xl text-white ml-auto md:mr-14">Wild Wishes</h1>
+                <h1 className="text-4xl text-white ml-auto md:mr-14 wild-font">Wild Wishes</h1>
                 <div className="footer-underline md:mr-14"></div>
                 <h1 className="text-xl text-white ml-auto md:mr-14 mb-4">2021</h1>
                 <div className="mx-auto mb-5" >
